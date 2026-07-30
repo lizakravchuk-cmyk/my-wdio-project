@@ -1,12 +1,12 @@
 {
   "name": "my-wdio-project",
   "version": "1.0.0",
-  "type": "module",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "wdio": "wdio run ./wdio.conf.js"
+"scripts": {
+    "test": "wdio run wdio.conf.js",
+    "report": "node node_modules/wdio-html-nice-reporter/lib/makeReport.js master-report.html 'reports/html-reports/'"   
+    
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,9 @@
     "@wdio/mocha-framework": "^9.29.1",
     "@wdio/spec-reporter": "^9.29.1",
     "chai": "^6.2.2",
-    "mocha": "^11.7.6"
+    "mocha": "^11.7.6",
+    "wdio-html-nice-reporter": "^8.1.7",
+    "wdio-reportportal-reporter": "^7.6.0",
+    "wdio-reportportal-service": "^7.3.1"
   }
 }

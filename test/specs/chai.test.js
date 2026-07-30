@@ -1,6 +1,5 @@
-import { expect, should as chaiShould, assert } from 'chai';
+const { expect, should: chaiShould, assert } = require('chai');
 
-// Ініціалізація should
 chaiShould();
 
 describe('Chai Assert interface', () => {
